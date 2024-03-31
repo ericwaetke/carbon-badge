@@ -162,7 +162,8 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
-.backPrimaryText span {
+.backPrimaryText span,
+.credit a {
 	color: var(--mix);
 }
 p {
