@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'badge-grade';
+	src: url('/badge-grade-normal.woff2') format('woff2'),
+         url('/badge-grade-normal.otf') format('opentype');
+	font-weight: normal;
+}
+
 :root {
 	/* Green */
 	--background: oklch(88.46% 0.191 162.99);
@@ -151,7 +158,10 @@ body {
 	letter-spacing: 0.025rem;
 }
 
-.grade {
+.middleText {
+	font-family: "badge-grade";
+	font-size: 3rem;
+	line-height: 1;
 	padding-bottom: 0.25rem;
 }
 .backPrimaryText {
