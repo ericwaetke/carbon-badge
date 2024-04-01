@@ -2,14 +2,6 @@ const template = document.createElement('template')
 template.innerHTML = `
 
 <style>
-
-@font-face {
-	font-family: 'badge-grade';
-	src: url('/badge-grade-normal.woff2') format('woff2'),
-         url('/badge-grade-normal.otf') format('opentype');
-	font-weight: normal;
-}
-
 .badgeContainer {
 	height: 128px;
 	width: 128px;
@@ -354,6 +346,11 @@ class CarbonBadge extends HTMLElement {
 		back.addEventListener("animationend", () => {
 			back.classList.add("noHover")
 		})
+
+		const font = document.createElement("link");
+		font.href = "./fonts/badge.css";
+		font.rel = "stylesheet"
+		document.head.appendChild(font);
 	}
 
 	static get observedAttributes() {

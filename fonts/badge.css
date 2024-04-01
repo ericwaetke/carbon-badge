@@ -1,0 +1,6 @@
+@font-face {
+	font-family: "badge-grade";
+	src: url("./badge-grade-normal.woff2") format("woff2"),
+		url("./badge-grade-normal.otf") format("opentype");
+	font-weight: normal;
+}
